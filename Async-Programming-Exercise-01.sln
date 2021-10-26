@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathWebApi01", "MathWebApi01\MathWebApi01.csproj", "{BB354DF0-B6A1-466C-A185-4F70ED27C21E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathWebApi02", "MathWebApi02\MathWebApi02.csproj", "{47200791-1350-4EA0-A38B-7138F788C8CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathWebApi03", "MathWebApi03\MathWebApi03.csproj", "{DACADBBA-3FCC-48DD-A067-5F99905A6E00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App_Start", "App_Start", "{7795157D-F1F6-4F2F-9BE4-1AF5129910F1}"
+	ProjectSection(SolutionItems) = preProject
+		MathWebApi\App_Start\BundleConfig.cs = MathWebApi\App_Start\BundleConfig.cs
+		MathWebApi\App_Start\FilterConfig.cs = MathWebApi\App_Start\FilterConfig.cs
+		MathWebApi\App_Start\RouteConfig.cs = MathWebApi\App_Start\RouteConfig.cs
+		MathWebApi\App_Start\WebApiConfig.cs = MathWebApi\App_Start\WebApiConfig.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{6E46BEEE-0E6D-4FB5-8BF4-327048747AAA}"
+	ProjectSection(SolutionItems) = preProject
+		MathWebApi\Controllers\MathController.cs = MathWebApi\Controllers\MathController.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC422CBE-9211-4BBE-94BC-EB3A4B511BB7}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB354DF0-B6A1-466C-A185-4F70ED27C21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB354DF0-B6A1-466C-A185-4F70ED27C21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB354DF0-B6A1-466C-A185-4F70ED27C21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB354DF0-B6A1-466C-A185-4F70ED27C21E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47200791-1350-4EA0-A38B-7138F788C8CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47200791-1350-4EA0-A38B-7138F788C8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47200791-1350-4EA0-A38B-7138F788C8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47200791-1350-4EA0-A38B-7138F788C8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACADBBA-3FCC-48DD-A067-5F99905A6E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACADBBA-3FCC-48DD-A067-5F99905A6E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACADBBA-3FCC-48DD-A067-5F99905A6E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACADBBA-3FCC-48DD-A067-5F99905A6E00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7795157D-F1F6-4F2F-9BE4-1AF5129910F1} = {CC422CBE-9211-4BBE-94BC-EB3A4B511BB7}
+		{6E46BEEE-0E6D-4FB5-8BF4-327048747AAA} = {CC422CBE-9211-4BBE-94BC-EB3A4B511BB7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F013B5C7-8327-4AC0-B44D-C7C3E5D895F3}
+	EndGlobalSection
+EndGlobal
