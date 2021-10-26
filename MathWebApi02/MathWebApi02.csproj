@@ -138,6 +138,9 @@
     <Compile Include="..\MathWebApi\Controllers\MathController.cs">
       <Link>Controllers\MathController.cs</Link>
     </Compile>
+    <Compile Include="..\MathWebApi\Models\SumRequestModel.cs">
+      <Link>Models\SumRequestModel.cs</Link>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,7 +160,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\" />
     <Folder Include="fonts\" />
-    <Folder Include="Models\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>

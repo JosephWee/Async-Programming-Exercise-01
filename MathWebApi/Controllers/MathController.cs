@@ -3,42 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace MathWebApi.Controllers
 {
     public class MathController : ApiController
     {
-        private List<Uri> FindPeers()
+        public IHttpActionResult PostSum([FromBody] SumRequestModel requestModel)
         {
-            List<Uri> peerUris = new List<Uri>();
-
-            string peersAppSetting = System.Configuration.ConfigurationManager.AppSettings["peers"];
-            string[] peers = peersAppSetting.Split(' ');
-            foreach (var peer in peers)
+            try
             {
-                Uri peerUri = null;
-                if (Uri.TryCreate(peer, UriKind.RelativeOrAbsolute, out peerUri))
+                int result = requestModel.operand.Length > 0 ? requestModel.operand[0] : 0;
+
+                for (int i = 1; i < requestModel.operand.Length; i++)
                 {
-                    peerUris.Add(peerUri); 
+                    result += requestModel.operand[i];
                 }
+
+                return Ok(result);
             }
-
-            return peerUris;
-        }
-
-        public IHttpActionResult GetSum([FromUri] int[] operand)
-        {
-            List<Uri> peers = FindPeers();
-
-            int result = operand.Length > 0 ? operand[0] : 0;
-
-            for (int i = 1; i < operand.Length; i++)
+            catch (Exception ex)
             {
-                result += operand[i];
+                return InternalServerError();
             }
-
-            return Ok(result);
         }
     }
 }
